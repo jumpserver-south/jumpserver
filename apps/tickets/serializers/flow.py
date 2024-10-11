@@ -2,7 +2,7 @@ from django.db.transaction import atomic
 from django.utils.translation import gettext_lazy as _
 from rest_framework import serializers
 
-from common.serializers.fields import LabeledChoiceField
+from common.serializers.fields import JSONManyToManyField, LabeledChoiceField
 from orgs.mixins.serializers import OrgResourceModelSerializerMixin
 from orgs.models import Organization
 from orgs.utils import get_current_org_id
@@ -49,31 +49,34 @@ class TicketFlowApproveSerializer(serializers.ModelSerializer):
 
 
 class TicketFlowSerializer(OrgResourceModelSerializerMixin):
+    name = serializers.CharField(max_length=256, label=_("Name"))
     type = LabeledChoiceField(
         choices=TicketType.choices, required=True, label=_('Type')
     )
+    users = JSONManyToManyField(label=_('User'))
     rules = TicketFlowApproveSerializer(many=True, required=True)
 
     class Meta:
         model = TicketFlow
-        fields_mini = ['id', ]
+        fields_mini = ['id', 'name']
         fields_small = fields_mini + [
-            'type', 'approval_level', 'created_by', 'date_created', 'date_updated',
-            'org_id', 'org_name'
+            'type', 'priority', 'approval_level', 'internal',
+            'created_by', 'date_created', 'date_updated', 'org_id', 'org_name'
         ]
-        fields = fields_small + ['rules', ]
+        fields = fields_small + ['rules', 'users']
         read_only_fields = ['created_by', 'org_id', 'date_created', 'date_updated']
         extra_kwargs = {
+            "priority": {"default": 50},
             'type': {'required': True},
             'approval_level': {'required': True}
         }
 
-    def validate_type(self, value):
-        if not self.instance or (self.instance and self.instance.type != value):
-            if self.Meta.model.objects.filter(type=value).exists():
-                error = _('The current organization type already exists')
-                raise serializers.ValidationError(error)
-        return value
+    # def validate_type(self, value):
+    #     if not self.instance or (self.instance and self.instance.type != value):
+    #         if self.Meta.model.objects.filter(type=value).exists():
+    #             error = _('The current organization type already exists')
+    #             raise serializers.ValidationError(error)
+    #     return value
 
     def create_or_update(self, action, validated_data, instance=None):
         related = 'rules'
