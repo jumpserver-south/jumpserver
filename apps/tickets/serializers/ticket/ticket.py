@@ -84,10 +84,14 @@ class TicketApplySerializer(TicketSerializer):
 
         ticket_type = attrs.get('type')
         org_id = attrs.get('org_id')
-        flow = TicketFlow.get_org_related_flows(org_id=org_id).filter(type=ticket_type).first()
+        # flow = TicketFlow.get_org_related_flows(org_id=org_id).filter(type=ticket_type).first()
+        # 根据申请人及优先级匹配工单流程
+        applicant = self.get_applicant(attrs.get('applicant'))
+        attrs['applicant'] = applicant
+        flow = TicketFlow.get_user_flows(user=applicant, org_id=org_id).filter(type=ticket_type).first()
         if not flow:
             error = _('The ticket flow `{}` does not exist'.format(ticket_type))
             raise serializers.ValidationError(error)
         attrs['flow'] = flow
-        attrs['applicant'] = self.get_applicant(attrs.get('applicant'))
+
         return attrs
