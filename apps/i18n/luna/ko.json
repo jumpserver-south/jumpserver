@@ -289,5 +289,11 @@
     "success": "성공",
     "system user": "시스템 사용자",
     "tabLimits": "현재 15개의 탭이 열려 있습니다. 시스템의 안정성을 위해 Luna를 계속 사용하려면 새로운 브라우저 탭에서 열어보시겠습니까?",
-    "user": "사용자"
+    "user": "사용자",
+    "Apply reason": "신청 이유",
+    "Operation content": "작업 내용",
+    "Operation duration": "작업 시간",
+    "Please enter apply reason": "신청 이유를 입력해 주세요",
+    "Please enter operation content": "작업 내용을 입력해 주세요",
+    "Please enter operation duration, e.g. 30 minutes": "작업 시간을 입력해 주세요, 예: 30분"
 }

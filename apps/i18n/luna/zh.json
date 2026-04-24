@@ -289,5 +289,12 @@
     "success": "成功",
     "system user": "系统用户",
     "user": "用户",
-    "tabLimits": "当前已打开 15 个标签页。\n为保证系统稳定是否在新的浏览器标签页中打开 Luna 以继续操作？"
+    "tabLimits": "当前已打开 15 个标签页。\n为保证系统稳定是否在新的浏览器标签页中打开 Luna 以继继操作？",
+
+    "Apply reason": "申请原因",
+    "Operation content": "操作内容",
+    "Operation duration": "操作时长",
+    "Please enter apply reason": "请输入申请原因",
+    "Please enter operation content": "请输入操作内容",
+    "Please enter operation duration, e.g. 30 minutes": "请输入操作时长，如 30 分钟"
 }

@@ -102,7 +102,20 @@ class BaseTicketMessage(UserMessage):
         fields = self.ticket._meta.local_fields + self.ticket._meta.local_many_to_many
         excludes = ['ticket_ptr', 'flow']
         item_names = [field.name for field in fields if field.name not in excludes]
-        return self._get_fields_items(item_names)
+        items = self._get_fields_items(item_names)
+
+        # 补充用户申请时填写的 meta 信息（申请原因、操作内容、操作时长）
+        meta = getattr(self.ticket, 'meta', {}) or {}
+        meta_fields = [
+            ('apply_reason', _('Apply reason')),
+            ('apply_operation_content', _('Operation content')),
+            ('apply_operation_duration', _('Operation duration')),
+        ]
+        for key, label in meta_fields:
+            value = meta.get(key, '')
+            if value:
+                items.append({'name': key, 'title': label, 'value': value})
+        return items
 
 
 class TicketAppliedToAssigneeMessage(BaseTicketMessage):

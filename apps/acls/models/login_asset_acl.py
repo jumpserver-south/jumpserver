@@ -16,10 +16,16 @@ class LoginAssetACL(UserAssetAccountBaseACL):
         return self.name
 
     @classmethod
-    def create_login_asset_review_ticket(cls, user, asset, account_username, assignees, org_id):
+    def create_login_asset_review_ticket(cls, user, asset, account_username, assignees, org_id,
+                                         apply_info=None):
         from tickets.const import TicketType
         from tickets.models import ApplyLoginAssetTicket
         title = _('Login asset confirm') + ' ({})'.format(user)
+        meta = {}
+        if apply_info:
+            meta['apply_reason'] = apply_info.get('reason', '')
+            meta['apply_operation_content'] = apply_info.get('operation_content', '')
+            meta['apply_operation_duration'] = apply_info.get('operation_duration', '')
         data = {
             'title': title,
             'org_id': org_id,
@@ -28,6 +34,7 @@ class LoginAssetACL(UserAssetAccountBaseACL):
             'apply_login_asset': asset,
             'apply_login_account': account_username,
             'type': TicketType.login_asset_confirm,
+            'meta': meta,
         }
         ticket = ApplyLoginAssetTicket.objects.create(**data)
         ticket.open_by_system(assignees)

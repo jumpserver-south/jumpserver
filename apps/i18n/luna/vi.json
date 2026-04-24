@@ -289,5 +289,11 @@
     "success": "Thành công",
     "system user": "Tên đăng nhập",
     "tabLimits": "Hiện tại đã mở 15 tab.  \nĐể đảm bảo tính ổn định của hệ thống, có qua tab trình duyệt mới để mở Luna và tiếp tục thao tác không?",
-    "user": "Người dùng"
+    "user": "Người dùng",
+    "Apply reason": "Lý do ứng dụng",
+    "Operation content": "Nội dung hoạt động",
+    "Operation duration": "Thời lượng hoạt động",
+    "Please enter apply reason": "Vui lòng nhập lý do ứng dụng",
+    "Please enter operation content": "Vui lòng nhập nội dung hoạt động",
+    "Please enter operation duration, e.g. 30 minutes": "Vui lòng nhập thời lượng hoạt động, ví dụ: 30 phút"
 }
