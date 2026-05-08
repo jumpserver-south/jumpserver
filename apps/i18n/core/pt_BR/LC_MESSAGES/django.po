@@ -12238,6 +12238,18 @@ msgstr "Importação de licença bem-sucedida"
 msgid "Invalid license"
 msgstr "Licença inválida"
 
+#: tickets/notifications.py:110
+msgid "Apply reason"
+msgstr "Motivo da solicitação"
+
+#: tickets/notifications.py:111
+msgid "Operation content"
+msgstr "Conteúdo da operação"
+
+#: tickets/notifications.py:112
+msgid "Operation duration"
+msgstr "Duração da operação"
+
 #~ msgid "Closed"
 #~ msgstr "Fechado"
 

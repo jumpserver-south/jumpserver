@@ -11788,6 +11788,18 @@ msgstr "许可证导入成功"
 msgid "Invalid license"
 msgstr "许可证无效"
 
+#: tickets/notifications.py:110
+msgid "Apply reason"
+msgstr "申请原因"
+
+#: tickets/notifications.py:111
+msgid "Operation content"
+msgstr "操作内容"
+
+#: tickets/notifications.py:112
+msgid "Operation duration"
+msgstr "操作时长"
+
 #~ msgid "Closed"
 #~ msgstr "关闭的"
 

@@ -11549,3 +11549,15 @@ msgstr ""
 #: xpack/plugins/license/api.py:53
 msgid "Invalid license"
 msgstr ""
+
+#: tickets/notifications.py:110
+msgid "Apply reason"
+msgstr ""
+
+#: tickets/notifications.py:111
+msgid "Operation content"
+msgstr ""
+
+#: tickets/notifications.py:112
+msgid "Operation duration"
+msgstr ""

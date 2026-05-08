@@ -12287,6 +12287,18 @@ msgstr "Nhập giấy phép thành công"
 msgid "Invalid license"
 msgstr "Giấy phép không hợp lệ"
 
+#: tickets/notifications.py:110
+msgid "Apply reason"
+msgstr "Lý do ứng dụng"
+
+#: tickets/notifications.py:111
+msgid "Operation content"
+msgstr "Nội dung hoạt động"
+
+#: tickets/notifications.py:112
+msgid "Operation duration"
+msgstr "Thời lượng hoạt động"
+
 #~ msgid "Closed"
 #~ msgstr "Đóng"
 

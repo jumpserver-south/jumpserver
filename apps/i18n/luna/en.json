@@ -295,5 +295,8 @@
     "Operation duration": "Operation duration",
     "Please enter apply reason": "Please enter apply reason",
     "Please enter operation content": "Please enter operation content",
-    "Please enter operation duration, e.g. 30 minutes": "Please enter operation duration, e.g. 30 minutes"
+    "Please enter operation duration, e.g. 30 minutes": "Please enter operation duration, e.g. 30 minutes",
+    "Apply reason is required": "Apply reason cannot be empty",
+    "Operation content is required": "Operation content cannot be empty",
+    "Operation duration is required": "Operation duration cannot be empty"
 }

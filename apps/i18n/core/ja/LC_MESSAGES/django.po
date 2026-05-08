@@ -12098,6 +12098,18 @@ msgstr "ライセンスのインポートに成功"
 msgid "Invalid license"
 msgstr "ライセンスが無効です"
 
+#: tickets/notifications.py:110
+msgid "Apply reason"
+msgstr "申請理由"
+
+#: tickets/notifications.py:111
+msgid "Operation content"
+msgstr "操作内容"
+
+#: tickets/notifications.py:112
+msgid "Operation duration"
+msgstr "操作時間"
+
 #~ msgid "Closed"
 #~ msgstr "クローズ"
 

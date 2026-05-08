@@ -295,5 +295,8 @@
     "Operation duration": "Duración de la operación",
     "Please enter apply reason": "Por favor ingrese la razón de solicitud",
     "Please enter operation content": "Por favor ingrese el contenido de la operación",
-    "Please enter operation duration, e.g. 30 minutes": "Por favor ingrese la duración de la operación, p. ej. 30 minutos"
+    "Please enter operation duration, e.g. 30 minutes": "Por favor ingrese la duración de la operación, p. ej. 30 minutos",
+    "Apply reason is required": "La razón de solicitud es obligatoria y no se puede estar vacía",
+    "Operation content is required": "El contenido de la operación es obligatorio y no puede estar vacío",
+    "Operation duration is required": "La duración de la operación es obligatoria y no puede estar vacía"
 }

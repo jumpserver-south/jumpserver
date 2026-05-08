@@ -11808,6 +11808,18 @@ msgstr "許可證匯入成功"
 msgid "Invalid license"
 msgstr "許可證無效"
 
+#: tickets/notifications.py:110
+msgid "Apply reason"
+msgstr "申請原因"
+
+#: tickets/notifications.py:111
+msgid "Operation content"
+msgstr "操作內容"
+
+#: tickets/notifications.py:112
+msgid "Operation duration"
+msgstr "操作時長"
+
 #~ msgid "Closed"
 #~ msgstr "關閉的"
 

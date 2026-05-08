@@ -296,5 +296,8 @@
     "Operation duration": "操作时长",
     "Please enter apply reason": "请输入申请原因",
     "Please enter operation content": "请输入操作内容",
-    "Please enter operation duration, e.g. 30 minutes": "请输入操作时长，如 30 分钟"
+    "Please enter operation duration, e.g. 30 minutes": "请输入操作时长，如 30 分钟",
+    "Apply reason is required": "申请原因不能为空",
+    "Operation content is required": "操作内容不能为空",
+    "Operation duration is required": "操作时长不能为空"
 }

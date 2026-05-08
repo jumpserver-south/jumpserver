@@ -295,5 +295,8 @@
     "Operation duration": "Thời lượng hoạt động",
     "Please enter apply reason": "Vui lòng nhập lý do ứng dụng",
     "Please enter operation content": "Vui lòng nhập nội dung hoạt động",
-    "Please enter operation duration, e.g. 30 minutes": "Vui lòng nhập thời lượng hoạt động, ví dụ: 30 phút"
+    "Please enter operation duration, e.g. 30 minutes": "Vui lòng nhập thời lượng hoạt động, ví dụ: 30 phút",
+    "Apply reason is required": "Lý do ứng dụng không thể để trống",
+    "Operation content is required": "Nội dung hoạt động không thể để trống",
+    "Operation duration is required": "Thời lượng hoạt động không thể để trống"
 }

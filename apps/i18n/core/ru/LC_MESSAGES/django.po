@@ -12266,6 +12266,18 @@ msgstr "Лицензия успешно импортирована"
 msgid "Invalid license"
 msgstr "Лицензия недействительна"
 
+#: tickets/notifications.py:110
+msgid "Apply reason"
+msgstr "Причина заявки"
+
+#: tickets/notifications.py:111
+msgid "Operation content"
+msgstr "Содержание операции"
+
+#: tickets/notifications.py:112
+msgid "Operation duration"
+msgstr "Продолжительность операции"
+
 #~ msgid "Closed"
 #~ msgstr "Закрыто"
 

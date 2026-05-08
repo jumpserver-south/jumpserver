@@ -295,5 +295,8 @@
     "Operation duration": "Продолжительность операции",
     "Please enter apply reason": "Пожалуйста, введите причину заявки",
     "Please enter operation content": "Пожалуйста, введите содержание операции",
-    "Please enter operation duration, e.g. 30 minutes": "Пожалуйста, введите продолжительность операции, напр.: 30 минут"
-}
+    "Please enter operation duration, e.g. 30 minutes": "Пожалуйста, введите продолжительность операции, напр.: 30 минут",
+    "Apply reason is required": "Причина заявки не может быть пустой",
+    "Operation content is required": "Содержание операции не может быть пустым",
+    "Operation duration is required": "Продолжительность операции не может быть пустой"
+ }

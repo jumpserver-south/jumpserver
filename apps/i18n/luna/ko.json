@@ -295,5 +295,8 @@
     "Operation duration": "작업 시간",
     "Please enter apply reason": "신청 이유를 입력해 주세요",
     "Please enter operation content": "작업 내용을 입력해 주세요",
-    "Please enter operation duration, e.g. 30 minutes": "작업 시간을 입력해 주세요, 예: 30분"
+    "Please enter operation duration, e.g. 30 minutes": "작업 시간을 입력해 주세요, 예: 30분",
+    "Apply reason is required": "신청 이유를 입력해 주세요",
+    "Operation content is required": "작업 내용을 입력해 주세요",
+    "Operation duration is required": "작업 시간을 입력해 주세요"
 }
