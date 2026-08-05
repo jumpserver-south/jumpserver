@@ -309,5 +309,14 @@
     "success": "成功",
     "system user": "システムユーザー",
     "tabLimits": "現在、15個のタブが開かれています。システムの安定性を確保するために、新しいブラウザのタブでLunaを開いて操作を続けますか？",
-    "user": "ユーザー"
+    "user": "ユーザー",
+    "Apply reason": "申請理由",
+    "Operation content": "操作内容",
+    "Operation duration": "操作時間",
+    "Please enter apply reason": "申請理由を入力してください",
+    "Please enter operation content": "操作内容を入力してください",
+    "Please enter operation duration, e.g. 30 minutes": "操作時間を入力してください（例: 30分）",
+    "Apply reason is required": "申請理由を入力してください",
+    "Operation content is required": "操作内容を入力してください",
+    "Operation duration is required": "操作時間を入力してください"
 }

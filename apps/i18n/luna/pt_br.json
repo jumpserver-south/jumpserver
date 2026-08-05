@@ -309,5 +309,14 @@
     "success": " Sucesso",
     "system user": "Usuário do Sistema",
     "tabLimits": "Atualmente, 15 abas estão abertas. Para garantir a estabilidade do sistema, você deseja abrir o Luna em uma nova aba do navegador para continuar a operação?",
-    "user": "Usuário"
+    "user": "Usuário",
+    "Apply reason": "Motivo da solicitação",
+    "Operation content": "Conteúdo da operação",
+    "Operation duration": "Duração da operação",
+    "Please enter apply reason": "Por favor, insira o motivo da solicitação",
+    "Please enter operation content": "Por favor, insira o conteúdo da operação",
+    "Please enter operation duration, e.g. 30 minutes": "Por favor, insira a duração da operação, ex. 30 minutos",
+    "Apply reason is required": "Motivo da solicitação não pode ser vazio",
+    "Operation content is required": "Conteúdo da operação não pode ser vazio",
+    "Operation duration is required": "Duração da operação não pode ser vazia"
 }

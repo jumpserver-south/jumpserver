@@ -310,5 +310,14 @@
     "success": "成功",
     "system user": "系統用戶",
     "tabLimits": "當前已打開 15 個標籤頁。  \n為了確保系統穩定，是否在新的瀏覽器標籤頁中打開 Luna 以繼續操作？",
-    "user": "用戶"
+    "user": "用戶",
+    "Apply reason": "申請原因",
+    "Operation content": "操作內容",
+    "Operation duration": "操作時長",
+    "Please enter apply reason": "請輸入申請原因",
+    "Please enter operation content": "請輸入操作內容",
+    "Please enter operation duration, e.g. 30 minutes": "請輸入操作時長，如 30 分鐘",
+    "Apply reason is required": "申請原因不能为空",
+    "Apply content is required": "操作內容不能为空",
+    "Apply duration is required": "操作時長不能为空"
 }

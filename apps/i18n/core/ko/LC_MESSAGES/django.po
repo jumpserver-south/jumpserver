@@ -12977,5 +12977,17 @@ msgstr "라이센스가 유효하지 않습니다."
 #~ msgid "Periodic report"
 #~ msgstr "주기 실행"
 
+#: tickets/notifications.py:110
+msgid "Apply reason"
+msgstr "신청 이유"
+
+#: tickets/notifications.py:111
+msgid "Operation content"
+msgstr "작업 내용"
+
+#: tickets/notifications.py:112
+msgid "Operation duration"
+msgstr "작업 시간"
+
 #~ msgid "Closed"
 #~ msgstr "닫기"

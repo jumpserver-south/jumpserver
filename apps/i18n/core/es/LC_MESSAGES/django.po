@@ -13416,5 +13416,17 @@ msgstr "Licencia no válida"
 #~ msgid "Periodic report"
 #~ msgstr "Ejecutar periódicamente"
 
+#: tickets/notifications.py:110
+msgid "Apply reason"
+msgstr "Razón de solicitud"
+
+#: tickets/notifications.py:111
+msgid "Operation content"
+msgstr "Contenido de la operación"
+
+#: tickets/notifications.py:112
+msgid "Operation duration"
+msgstr "Duración de la operación"
+
 #~ msgid "Closed"
 #~ msgstr "Cerrado"

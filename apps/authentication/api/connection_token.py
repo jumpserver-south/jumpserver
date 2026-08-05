@@ -672,9 +672,15 @@ class ConnectionTokenViewSet(AuthFaceMixin, ExtraActionApiMixin, RootOrgViewMixi
                 msg = _('ACL action is review')
                 raise JMSException(code='acl_review', detail=msg)
             self._record_operate_log(acl, asset)
+            apply_info = {
+                'reason': str(self.request.data.get('review_reason', ''))[:1024],
+                'operation_content': str(self.request.data.get('review_operation_content', ''))[:1024],
+                'operation_duration': str(self.request.data.get('review_operation_duration', ''))[:128],
+            }
             ticket = LoginAssetACL.create_login_asset_review_ticket(
                 user=user, asset=asset, account_username=self.input_username,
-                assignees=acl.reviewers.all(), org_id=asset.org_id
+                assignees=acl.reviewers.all(), org_id=asset.org_id,
+                apply_info=apply_info
             )
             return ticket
         if acl.is_action(acl.ActionChoices.face_verify):

@@ -308,6 +308,15 @@
     "start time": "Start time",
     "success": "Success",
     "system user": "System user",
+    "user": "User",
     "tabLimits": "15 tabs are currently open.\nTo ensure system stability, would you like to open Luna in a new browser tab to continue?",
-    "user": "User"
+    "Apply reason": "Apply reason",
+    "Operation content": "Operation content",
+    "Operation duration": "Operation duration",
+    "Please enter apply reason": "Please enter apply reason",
+    "Please enter operation content": "Please enter operation content",
+    "Please enter operation duration, e.g. 30 minutes": "Please enter operation duration, e.g. 30 minutes",
+    "Apply reason is required": "Apply reason cannot be empty",
+    "Operation content is required": "Operation content cannot be empty",
+    "Operation duration is required": "Operation duration cannot be empty"
 }

@@ -12711,5 +12711,20 @@ msgstr "许可证无效"
 #~ msgid "Waiting task start"
 #~ msgstr "等待任务开始"
 
+#: tickets/notifications.py:110
+msgid "Apply reason"
+msgstr "申请原因"
+
+#: tickets/notifications.py:111
+msgid "Operation content"
+msgstr "操作内容"
+
+#: tickets/notifications.py:112
+msgid "Operation duration"
+msgstr "操作时长"
+
+#~ msgid "Closed"
+#~ msgstr "关闭的"
+
 #~ msgid "Offline video player"
 #~ msgstr "离线录像播放器"
